@@ -15,5 +15,8 @@
     "url": "https://github.com/KWAshen/express-blog-intro/issues"
   },
   "homepage": "https://github.com/KWAshen/express-blog-intro#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
