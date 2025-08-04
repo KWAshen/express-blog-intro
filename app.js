@@ -10,39 +10,40 @@ app.get('/',(req,res) => {
   res.send('Server del mio blog');
 })
 
-app.get('/2',(req,res) => {
+app.get('/bacheca',(req,res) => {
   const posts= [
     {
       titolo:'Titolo 1',
       contenuto:"lorem",
-      immagine:'.img/post.jpg',
+      immagine:'img/img.png',
       tag:['calcio','tennis','basket','pallavolo','nuoto'],
     },
     {
       titolo:'Titolo 2',
       contenuto:"lorem",
-      immagine:'.img/post.jpg',
+      immagine:'img/img.png',
       tag:['calcio','tennis','basket','pallavolo','nuoto'],
     },
     {
       titolo:'Titolo 3',
       contenuto:"lorem",
-      immagine:'.img/post.jpg',
+      immagine:'img/img.png',
       tag:['calcio','tennis','basket','pallavolo','nuoto'],
     },
     {
       titolo:'Titolo 4',
       contenuto:"lorem",
-      immagine:'.img/post.jpg',
+      immagine:'img/img.png',
       tag:['calcio','tennis','basket','pallavolo','nuoto'],
     },
     {
       titolo:'Titolo 5',
       contenuto:"lorem",
-      immagine:'.img/post.jpg',
+      immagine:'img/img.png',
       tag:['calcio','tennis','basket','pallavolo','nuoto'],
-    },
-  ]
+    }
+  ];
+  res.json(posts);
 })
 
 app.listen(port,()=>{
